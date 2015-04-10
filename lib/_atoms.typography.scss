@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! blocss-typography v1.0.0 | MIT License | github.com/Blocss */
+/*! blocss-typography v1.0.1 | MIT License | github.com/Blocss */
 
 /*----------------------------------------------------------------------------*\
     TYPOGRAPHY
@@ -93,16 +93,6 @@ $blocss-micro: 12px !default;
 
 /*  Headings
 \*----------------------------------------------------------------------------*/
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: bold;
-}
-
 
 h1 {
     @extend .#{$blocss-typography-namespace}alpha;
