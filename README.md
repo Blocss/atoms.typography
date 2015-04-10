@@ -1,4 +1,4 @@
-# Blocss Typography – v1.0.0
+# Blocss Typography – v1.0.1
 
 A [Blocss](https://github.com/Blocss/blocss/) component for responsive typography
 
