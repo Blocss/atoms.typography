@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/*! blocss-typography v1.0.0 | MIT License | github.com/Blocss */
+
+/*----------------------------------------------------------------------------*\
+    TYPOGRAPHY
+    Pragmatic & practical font sizing
+    As per: http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/
+\*----------------------------------------------------------------------------*/
+
+/*  Variables
+\*----------------------------------------------------------------------------*/
+
+/**
+ * Module can be disabled by switching `$blocss-use-typography` to `false`
+ */
+$blocss-use-typography: true !default;
+
+
+/**
+ * Namespacing
+ */
+$blocss-typography-namespace: $blocss-namespace !default;
+
+
+/**
+ * Sizes (in pixels)
+ */
+$blocss-giga: 96px !default;
+$blocss-mega: 72px !default;
+$blocss-kilo: 48px !default;
+
+$blocss-alpha: 36px !default;
+$blocss-beta: 32px !default;
+$blocss-gamma: 28px !default;
+$blocss-delta: 24px !default;
+$blocss-epsilon: 20px !default;
+$blocss-zeta: 18px !default;
+
+$blocss-normalis: $blocss-base-font-size !default;
+
+$blocss-milli: 14px !default;
+$blocss-micro: 12px !default;
+
+
+
+/*  Module
+\*----------------------------------------------------------------------------*/
+
+@if $blocss-use-typography == true{
+
+/*  Sizes
+    Apply various font sizes by class
+\*----------------------------------------------------------------------------*/
+
+.#{$blocss-typography-namespace}giga {
+    @include font-size($blocss-giga);
+}
+.#{$blocss-typography-namespace}mega {
+    @include font-size($blocss-mega);
+}
+.#{$blocss-typography-namespace}kilo {
+    @include font-size($blocss-kilo);
+}
+.#{$blocss-typography-namespace}alpha {
+    @include font-size($blocss-alpha);
+}
+.#{$blocss-typography-namespace}beta {
+    @include font-size($blocss-beta);
+}
+.#{$blocss-typography-namespace}gamma {
+    @include font-size($blocss-gamma);
+}
+.#{$blocss-typography-namespace}delta {
+    @include font-size($blocss-delta);
+}
+.#{$blocss-typography-namespace}epsilon {
+    @include font-size($blocss-epsilon);
+}
+.#{$blocss-typography-namespace}zeta {
+    @include font-size($blocss-zeta);
+}
+.#{$blocss-typography-namespace}normalis {
+    @include font-size($blocss-normalis);
+}
+.#{$blocss-typography-namespace}milli {
+    @include font-size($blocss-milli);
+}
+.#{$blocss-typography-namespace}micro {
+    @include font-size($blocss-micro);
+}
+
+
+
+/*  Headings
+\*----------------------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+
+h1 {
+    @extend .#{$blocss-typography-namespace}alpha;
+}
+h2 {
+    @extend .#{$blocss-typography-namespace}beta;
+}
+h3 {
+    @extend .#{$blocss-typography-namespace}gamma;
+}
+h4 {
+    @extend .#{$blocss-typography-namespace}delta;
+}
+h5 {
+    @extend .#{$blocss-typography-namespace}epsilon;
+}
+h6 {
+    @extend .#{$blocss-typography-namespace}zeta;
+}
+
+
+/**
+ * Double stranded heading hierarchy
+ */
+.#{$blocss-typography-namespace}h1 {
+    @extend h1;
+}
+.#{$blocss-typography-namespace}h2 {
+    @extend h2;
+}
+.#{$blocss-typography-namespace}h3 {
+    @extend h3;
+}
+.#{$blocss-typography-namespace}h4 {
+    @extend h4;
+}
+.#{$blocss-typography-namespace}h5 {
+    @extend h5;
+}
+.#{$blocss-typography-namespace}h6 {
+    @extend h6;
+}
+
+
+/**
+ * Heading groups and generic any-heading class.
+ * To target any heading of any level simply apply a class of `.hN`
+ * Sample markup:
+<div class="hgroup">
+    <h1 class="hN"></h1>
+    <h2 class="hN"></h2>
+</hgroup>
+ */
+hgroup,
+.#{$blocss-typography-namespace}hgroup {
+    .#{$blocss-typography-namespace}hN {
+        margin-bottom: 0;
+    }
+}
+
+} // @endif
