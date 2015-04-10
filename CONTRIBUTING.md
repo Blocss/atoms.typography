@@ -95,11 +95,11 @@ project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/typography
+   git clone https://github.com/<your-username>/atoms.typography
    # Navigate to the newly cloned directory
-   cd typography
+   cd atoms.typography
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/Blocss/typography
+   git remote add upstream https://github.com/Blocss/atoms.typography
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
